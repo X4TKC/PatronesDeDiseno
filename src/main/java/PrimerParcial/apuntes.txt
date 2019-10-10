@@ -1,0 +1,36 @@
+Principios
+	  >Solid  (desarrollo como tal)
+Principio de responsabilidad unica
+Principio de abiert/cerrado
+Principio de sustitucion de liskov
+Principio de segregacion de la interfaz
+Principio de inversion de la dependencia
+
+Principio de responsabilidad unica
+La nocion de que un objeto solo deberia tener una unica responsabilidad
+Principio de abierto/cerrado
+La nocion de las “Entidades de software deben estar abiertas para su extension, pero cerradas para su modificacion”
+Si queremos anadir nuevo codigo, lo ideal seria poder construir sobre lo que ya existe, sin tener que hacer modificaciones grandes.
+Principio de sustitucion de liskov
+La nocion de los “objetos de un programa deberian ser reemplazables por instancias de sus subtipos sin alterar el correcto funcionamiento del programa”
+Siempre deberiamos poder reemplazar instancias de una clase padre por instancias de una clase hija, sin que hayan comprtamiento no deseados, visto de otra manera, las clases hijas no deberian modificar o eliminar los comportamientos definidos en el padre
+Principio de segregacion de la interfaz
+La nocion de que “muchas interfaces cliente especificas son mejores que una interfaz de proposito general
+Es mejor tener interfaces pequenas, con pocos metodos muy relacionados, en lugar de tener interfaces voluminosas que obligan a definir muchos metodos a quien las implementa.
+Principio de inversion de la dependencia.
+La nocion de que se debe “ depender de abstracciones, no depender de implementaciones”
+Las modulos de alto nivel no deberian depender de modulos de bajo nivel, sino de abstracciones
+Las abstracciones no deberian depender de los detalles. Los detalles deberian depender de las abstracciones.
+>F.I.R.S.T. (test para el desarollo)
+	--Fast-Rapido
+		Debe correr rapido y con frecuencia
+	--Insolated/Independent - Aislado / Independiente
+`		No puede tener dependencia de un test anterior, la condicion de una prueba no debe depender de un a prueba previa.
+	Utilizamos los mocks
+	--Repeatable- Repetible
+	Debe poder ejecutarse en cualquier entorno, (alguien deberia poder bajarse y poder ejecutarlo sin problema, poder ejecutarse en cualquier maquina, sin inpedimentos)
+
+	--Self-validating-Autovalidante
+	A prueba en si misma debe indicar si se cumple o no, no se debe requerir que se haga verificacion de pruebas anteriores.
+	--Thorough/Timely - Completo / oportuno
+	Las pruebas deben escribirse en el momento adecuado, que es justo antes de escribir el codigo de produccion, lo que le permite escribir codigo facilmente comprobable.
