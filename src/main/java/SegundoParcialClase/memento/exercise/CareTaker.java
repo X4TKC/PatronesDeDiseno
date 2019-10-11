@@ -15,7 +15,7 @@ public class CareTaker {
                 return savedStates.get(i);
             }
         }
-        return null;
+        return savedStates.get(savedStates.size()-1);
 
     }
 }
