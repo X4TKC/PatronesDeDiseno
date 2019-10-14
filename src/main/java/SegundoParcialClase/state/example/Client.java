@@ -61,7 +61,7 @@ public class Client {
 
 
 
-        if(((Bloqueado) state5).isComprobante()) {
+        if(((Bloqueado) celular.getState()).isComprobante()) {
             state = new Desbloqueado();
             celular.setState(state);
             celular.request();
