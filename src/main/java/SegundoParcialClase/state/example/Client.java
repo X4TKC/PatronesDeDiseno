@@ -14,29 +14,50 @@ public class Client {
         celular.setState(state);
 
         celular.request();
+        Thread.sleep(1000);
         celular.request();
         Thread.sleep(1000);
         celular.setState(state2);
         celular.request();
+        Thread.sleep(1000);
         celular.request();
+        Thread.sleep(1000);
         celular.request();
+        Thread.sleep(1000);
         celular.request();
-        Thread.sleep(2000);
+        Thread.sleep(1000);
         celular.setState(state3);
         celular.request();
+        Thread.sleep(1000);
         celular.request();
+        Thread.sleep(1000);
         celular.request();
+        Thread.sleep(1000);
         celular.request();
-        Thread.sleep(7000);
+        Thread.sleep(1000);
         celular.setState(state4);
         celular.request();
+        Thread.sleep(1000);
         celular.request();
+        Thread.sleep(1000);
         celular.request();
-        Thread.sleep(8000);
+        Thread.sleep(1000);
         celular.request();
+        Thread.sleep(1000);
+
+        celular.request();
+        Thread.sleep(1000);
+        celular.request();
+        Thread.sleep(1000);
+        celular.request();
+        Thread.sleep(1000);
+        celular.request();
+        Thread.sleep(1000);
+        celular.request();
+        Thread.sleep(1000);
         celular.setState(state5);
         celular.request();
-        celular.request();
+        Thread.sleep(1000);
 
 
 
