@@ -15,7 +15,8 @@ public class Bloqueado implements IState {
     private boolean comprobante;
     private Date date;
     private static long startTime=-1;
-    private static long unlockTime=0;
+    //private static long unlockTime=0;
+    private static final int INTENTOS=3;
 
 
 
@@ -40,44 +41,56 @@ public class Bloqueado implements IState {
 
     @Override
     public void handle() {
-        if(password.equals(intentoPassword)&&count<3){
+        int numSeconds;
+        int segundosrestantes;
+        // Comprueba si ya paso el tiempo para poder volver a ingresar la contrasena
+        // esta parte es tambien del date
+        if (count>=INTENTOS&&startTime!=-1){
+            date= new Date();
+            numSeconds = (int) ((date.getTime() - startTime) / 1000);
+            segundosrestantes= MAX_SECONDS-numSeconds;
+            if(segundosrestantes<=0){
+                startTime=-1;
+              //  unlockTime=0;
+                count=0;
+            }
+        }
+        //////////////////
+        // verifica la contrasena
+        if(password.equals(intentoPassword)&&count<INTENTOS){
             System.out.println("Celular desbloqueado");
             count=0;
             comprobante=true;
            // timer.cancel();
 
         }
-        else if (count<3){
+        // si falla la contrasena incrementa el count que es el que lleva la cuenta de intentos fallidos
+        else if (count<INTENTOS){
             comprobante=false;
             count++;
             System.out.println("password incorrecta " +count);
         }
+        // si los intentos exceden el limite se inicia el contador
         else{
             comprobante=false;
  /**
  * con Date
+  * startTime tiene un valor dumb -1 que indica que aun no fue inicializado
  */
             if(startTime==-1) {
-               // System.out.println("hola"+ startTime);
                 date= new Date();
                 startTime = date.getTime();
-                unlockTime = (startTime + 15000);
-
-
-
+               // unlockTime = (startTime + 15000);
             }
             date= new Date();
-            int numSeconds = (int) ((date.getTime() - startTime) / 1000);
-            int segundosrestantes= MAX_SECONDS-numSeconds;
+            numSeconds = (int) ((date.getTime() - startTime) / 1000);
+            segundosrestantes= MAX_SECONDS-numSeconds;
             if(segundosrestantes>=0) {
                 System.out.println("Celular bloqueado espere " + segundosrestantes + " segundos");
             }
-            else{
-                System.out.println("Vuelva a ingresar la contrasena");
-            }
-            if(numSeconds>MAX_SECONDS){
+            else {
                 startTime=-1;
-                unlockTime=0;
+              //  unlockTime=0;
                 count=0;
             }
 ///////////////////////////////////////////////

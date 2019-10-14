@@ -32,17 +32,12 @@ public class Client {
         celular.request();
         celular.request();
         celular.request();
-        Thread.sleep(7000);
-
+        Thread.sleep(8000);
+        celular.request();
         celular.setState(state5);
         celular.request();
         celular.request();
-        celular.request();
-        celular.request();
-        celular.request();
-        celular.request();
-        celular.request();
-        celular.request();
+
 
 
         if(((Bloqueado) state5).isComprobante()) {
