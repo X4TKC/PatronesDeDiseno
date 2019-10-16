@@ -3,7 +3,7 @@ package SegundoParcialClase.memento.exercise;
 import java.util.ArrayList;
 
 public class CareTaker {
-    private ArrayList<Memento> savedStates = new ArrayList<Memento>();
+    private ArrayList<Memento> savedStates = new ArrayList<>();
 
     public void addMemento(Memento m) {
         savedStates.add(m);

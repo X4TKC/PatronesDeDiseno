@@ -16,7 +16,7 @@ public class HandlerConcreto2 implements IHandler {
     @Override
     public void criteriaHandler(int amount) {
         if(amount<1000){
-            System.out.println("Tarea atendida por el HandlerConcreto2");
+            System.out.println("Tarea atendida por el Handler2");
         }
         else{
             next.criteriaHandler(amount);

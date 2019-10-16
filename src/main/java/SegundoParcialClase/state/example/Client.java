@@ -27,7 +27,7 @@ public class Client {
         Thread.sleep(1000);
         celular.setState(state3);
         celular.request();
-        Thread.sleep(1000);
+        Thread.sleep(4000);
         celular.request();
         Thread.sleep(1000);
         celular.request();
