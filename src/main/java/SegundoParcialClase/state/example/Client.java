@@ -5,14 +5,13 @@ public class Client {
 
     public static void main(String arg[]) throws InterruptedException {
 
-        IState state = new Bloqueado("asdasd");
-        IState state2 = new Bloqueado("asdasd");
-        IState state3 = new Bloqueado("asdasd");
-        IState state4 = new Bloqueado("asdasd");
-        IState state5 = new Bloqueado("tovilas");
+        IState state =   FactoryState.make(EnumState.Bloqueado,"asdasd");
+        IState state2 =  FactoryState.make(EnumState.Bloqueado,"asdasd");
+        IState state3 =  FactoryState.make(EnumState.Bloqueado,"asdasd");
+        IState state4 =  FactoryState.make(EnumState.Bloqueado,"asdasd");
+        IState state5 =  FactoryState.make(EnumState.Bloqueado,"tovilas");
         Celular celular = new Celular();
         celular.setState(state);
-
         celular.request();
         Thread.sleep(1000);
         celular.request();
@@ -44,7 +43,6 @@ public class Client {
         Thread.sleep(1000);
         celular.request();
         Thread.sleep(1000);
-
         celular.request();
         Thread.sleep(1000);
         celular.request();
@@ -62,9 +60,11 @@ public class Client {
 
 
         if(((Bloqueado) celular.getState()).isComprobante()) {
-            state = new Desbloqueado();
+            state =  FactoryState.make(EnumState.Desbloqueado,"");;
             celular.setState(state);
             celular.request();
         }
+
     }
+
 }
