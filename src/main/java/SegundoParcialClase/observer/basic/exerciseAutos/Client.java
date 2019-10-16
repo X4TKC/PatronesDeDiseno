@@ -6,7 +6,7 @@ public class Client {
         tiendaAutos.attach(new Ventas("Ventas"));
         tiendaAutos.attach(new Encargado("Encargado"));
         tiendaAutos.attach(new Reparaciones("Reparaciones"));
-        tiendaAutos.setAttribute1(new Auto("buen estado"));
+        tiendaAutos.setAttribute1(new Auto("Mal estado"));
         //tiendaAutos.notifyObserver();
 //        ConcreteSubject object = new ConcreteSubject();
 //        object.attach(new ObservadorConcreto1());
