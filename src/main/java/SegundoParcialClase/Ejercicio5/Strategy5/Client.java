@@ -6,7 +6,7 @@ public class Client {
 
     public static void main(String[] args){
         Context context = new Context();
-        int[] var={80,80,80,85};
+        int[] var={80,85,80,85};
         context.setAttribute1(var);
         context.execute();
         System.out.println(context.getPromedio());

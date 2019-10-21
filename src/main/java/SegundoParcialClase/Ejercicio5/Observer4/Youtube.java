@@ -7,8 +7,7 @@ public class Youtube implements ISubject {
     private Video video;
     public void setAttribute1(Video attribute1){
         this.video=attribute1;
-
-            this.notifyObserver();
+        this.notifyObserver();
 
     }
     @Override
