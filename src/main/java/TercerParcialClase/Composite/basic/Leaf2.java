@@ -13,12 +13,12 @@ public class Leaf2 extends Component {
 
     @Override
     public void add(Component component) {
-        System.out.println("not applicable on Item");
+        System.out.println("not applicable on Archivo");
     }
 
     @Override
     public void remove(Component component) {
-        System.out.println("not applicable on Item");
+        System.out.println("not applicable on Archivo");
     }
 
     @Override

@@ -8,21 +8,21 @@ public class Leaf extends Component {
 
     @Override
     public void operation() {
-        System.out.println("\t Item : "+this.getAttribute());
+        System.out.println("\t Archivo : "+this.getAttribute());
     }
 
     @Override
     public void add(Component component) {
-        System.out.println("not applicable on Item");
+        System.out.println("not applicable on Archivo");
     }
 
     @Override
     public void remove(Component component) {
-        System.out.println("not applicable on Item");
+        System.out.println("not applicable on Archivo");
     }
 
     @Override
     public void getChild(int position) {
-        System.out.println("\t Item :"+this.getAttribute());
+        System.out.println("\t Archivo :"+this.getAttribute());
     }
 }

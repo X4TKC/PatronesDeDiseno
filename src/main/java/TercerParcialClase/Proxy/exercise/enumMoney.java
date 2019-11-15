@@ -1,5 +1,5 @@
 package TercerParcialClase.Proxy.exercise;
-//ejercicio patron proxy
+//ejercicio patron Proxy
 enum enumMoney {
     $,Bs,Euros;
 }

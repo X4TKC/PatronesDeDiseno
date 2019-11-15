@@ -8,22 +8,21 @@ public class Item extends Component {
 
     @Override
     public void print() {
-        System.out.println("\t Item : "+this.getEstimacion()+" Name :" + this.getName());
+        System.out.println("\t Archivo : "+this.getEstimacion()+" Name :" + this.getName());
     }
 
     @Override
     public void add(Component component) {
-        System.out.println("not applicable on Item");
+        System.out.println("not applicable on Archivo");
     }
 
     @Override
     public void remove(Component component) {
-        System.out.println("not applicable on Item");
+        System.out.println("not applicable on Archivo");
     }
 
     @Override
     public void getChild(int position) {
         System.out.println(this.getEstimacion()+" "+this.getName());
-
     }
 }
