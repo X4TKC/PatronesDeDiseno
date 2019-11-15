@@ -1,18 +1,16 @@
 package TercerParcialExamen.Decorator;
 
 public class VidrioTemplado extends Decorator{
-    
-	private String attribute1;
+	private String name;
     private int precio;
     private int precioTotal;
-    private int almacenamiento;
     private int almacenamientoTotal;
     
     public VidrioTemplado(ICelular componente, int precio) {
         super(componente);
         this.precioTotal = precio + componente.getPrecioTotal();
         this.precio = precio;
-        this.almacenamientoTotal = almacenamiento + componente.getAlmacenamientoTotal();
+        this.almacenamientoTotal = componente.getAlmacenamientoTotal();
     }
 
     @Override
@@ -26,8 +24,8 @@ public class VidrioTemplado extends Decorator{
     
     public void operation(){
         super.operation();
-        this.attribute1 = "Vidrio templado";
-        System.out.println("Adding "+ attribute1 + " al precio de: "+ this.getPrecio());
+        this.name = "Vidrio templado";
+        System.out.println("Adding "+ name + " al precio de: "+ this.getPrecio());
     }
 
 	@Override
@@ -35,8 +33,6 @@ public class VidrioTemplado extends Decorator{
 		return almacenamientoTotal;
 	}
 
-	public int getAlmacenamiento() {
-		return almacenamiento;
-	}
+
     
 }

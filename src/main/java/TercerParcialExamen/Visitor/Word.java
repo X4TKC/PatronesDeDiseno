@@ -2,6 +2,7 @@ package TercerParcialExamen.Visitor;
 
 
 public class Word implements IElemento {
+
     private Documento doc;
     @Override
     public void crear(String text, String name) {

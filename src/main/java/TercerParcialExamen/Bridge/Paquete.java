@@ -1,21 +1,21 @@
 package TercerParcialExamen.Bridge;
 
 public class Paquete {
-	private String nombrePaquete;
+	private String namePackage;
 	private int precio;
 
-	public Paquete(String nombrePaquete, int precio) {
+	public Paquete(String namePackage, int precio) {
 		super();
-		this.nombrePaquete = nombrePaquete;
+		this.namePackage = namePackage;
 		this.precio = precio;
 	}
 
-	public String getNombrePaquete() {
-		return nombrePaquete;
+	public String getNamePackage() {
+		return namePackage;
 	}
 
-	public void setNombrePaquete(String nombrePaquete) {
-		this.nombrePaquete = nombrePaquete;
+	public void setNamePackage(String namePackage) {
+		this.namePackage = namePackage;
 	}
 
 	public int getPrecio() {

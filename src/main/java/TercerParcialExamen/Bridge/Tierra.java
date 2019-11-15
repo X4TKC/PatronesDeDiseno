@@ -13,9 +13,9 @@ public class Tierra implements IPaquete {
 
 	@Override
 	public double enviarPaquete() {
-		System.out.println("Enviando el paquete: "+this.getPaquete().getNombrePaquete()+" por tierra con precio de: "+this.paquete.getPrecio());
+		System.out.println("Paquete: "+this.getPaquete().getNamePackage()+" por tierra, Precio: "+this.paquete.getPrecio());
 		res = (interes*this.getPaquete().getPrecio())/100.0;
-		System.out.println("El interes del "+interes+"% del paquete es: "+res);
+		System.out.println("Interes: "+interes+"% Se adicionara: "+res);
 		return this.getPaquete().getPrecio()+res;
 	}
 

@@ -9,6 +9,7 @@ abstract class Component {
         this.name="Archivo";
         numWords=text.split("\\s+").length;
     }
+
     public Component(){}
 
     public void setName(String name) {

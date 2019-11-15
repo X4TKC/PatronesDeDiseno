@@ -1,7 +1,6 @@
 package TercerParcialExamen.Adapter;
 
 public interface IAuto {
-    void cargar(int var1);
-
-    int estadoElectricidad();
+    void setLlenarGasolina(int var1);
+    int estadoCombustible();
 }

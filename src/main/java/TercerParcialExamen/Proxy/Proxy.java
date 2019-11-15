@@ -8,7 +8,6 @@ public class Proxy implements ITarjeta{
 	public Proxy(Request request) {
 		this.request = request;
 	}
-
 	@Override
 	public void transaccion() {
 		if(transaccion == null)
@@ -16,7 +15,7 @@ public class Proxy implements ITarjeta{
 		if (request.getMontoActual() >= request.getMontoCompra() ) {
 			this.transaccion.transaccion();
 		} else {
-			System.out.println("No cuenta con los fondos suficientes para realizar la compra.");
+			System.out.println("Tu transaccion no pudo ser completada.");
 		}
 		
 	}

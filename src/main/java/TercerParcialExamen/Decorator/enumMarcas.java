@@ -1,7 +1,5 @@
 package TercerParcialExamen.Decorator;
 
-public enum Marcas {
-	
+public enum enumMarcas {
 	Sony, Samsung, Xiaomi
-
 }

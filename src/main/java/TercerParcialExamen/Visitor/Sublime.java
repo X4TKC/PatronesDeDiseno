@@ -1,9 +1,8 @@
 package TercerParcialExamen.Visitor;
 
-
-
 public class Sublime implements IElemento {
     private Documento doc;
+
     @Override
     public void crear(String text, String name) {
         doc=new Documento(text,name);

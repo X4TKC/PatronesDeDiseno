@@ -9,6 +9,7 @@ public class Composite extends Component {
     }
     public Composite(){}
 
+
     @Override
     public void print() {
         // some actions when we do iteration with list

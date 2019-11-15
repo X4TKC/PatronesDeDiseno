@@ -9,8 +9,7 @@ public class EmpresaSRL implements IEmpresa {
 	}
 
 	@Override
-	public void tipoDeEnvio() {
-		System.out.println("--------------------------------------------");
+	public void enviar() {
 		System.out.println("Empresa SRL");
 		System.out.println("El monto que se tiene que pagar es: "+this.paquete.enviarPaquete());
 

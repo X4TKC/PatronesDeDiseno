@@ -5,10 +5,10 @@ package TercerParcialExamen.Proxy;
 public class Request {
 	private int montoActual;
 	private int montoCompra;
-	private Client.Monedas moneda;
+	private enumMoneda moneda;
 	
-	public Request(int montoActual, int montoCompra, Client.Monedas moneda) {
-		super();
+	public Request(int montoActual, int montoCompra, enumMoneda moneda) {
+
 		this.montoActual = montoActual;
 		this.montoCompra = montoCompra;
 		this.moneda = moneda;
@@ -30,11 +30,11 @@ public class Request {
 		this.montoCompra = montoCompra;
 	}
 
-	public Client.Monedas getMoneda() {
+	public enumMoneda getMoneda() {
 		return moneda;
 	}
 
-	public void setMoneda(Client.Monedas moneda) {
+	public void setMoneda(enumMoneda moneda) {
 		this.moneda = moneda;
 	}
 	

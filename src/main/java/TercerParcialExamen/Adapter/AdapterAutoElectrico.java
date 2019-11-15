@@ -1,9 +1,9 @@
 package TercerParcialExamen.Adapter;
 
-public class Adaptador implements IAutoNormal{
+public class AdapterAutoElectrico implements IAuto {
     private AutoElectrico electrico = new AutoElectrico();
 
-    public Adaptador(AutoElectrico electrico) {
+    public AdapterAutoElectrico(AutoElectrico electrico) {
         this.electrico = electrico;
     }
 
@@ -12,6 +12,7 @@ public class Adaptador implements IAutoNormal{
     }
 
     public int estadoCombustible() {
-        return this.electrico.estadoElectricidad();
+
+        return this.electrico.estadoElectricidad()/10;
     }
 }

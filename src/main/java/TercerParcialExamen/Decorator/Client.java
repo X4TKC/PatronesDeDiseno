@@ -3,16 +3,16 @@ package TercerParcialExamen.Decorator;
 public class Client {
 	
     public static void main(String[] args) {
-    	Marcas marcas = null;
+    	enumMarcas enumMarcas = null;
         
-    	ICelular celular = new Celular(marcas.Sony, 1000, 33, 16,"Snapdragon 810"); //marca, precio celular, ram, almacenamiento, cpu
-        celular = new Carcasa(celular, 50); //precio
-        celular = new VidrioTemplado(celular, 15); //precio
-        celular = new MemoriaExterna(celular, 25, 32); //precio, almacenamiento
+    	ICelular celular = new Celular(enumMarcas.Sony, 1200, 6, 16,"Intel 750");
+        celular = new Carcasa(celular, 100);
+        celular = new VidrioTemplado(celular, 50);
+        celular = new MemoriaExterna(celular, 50, 16);
 
         celular.operation();
 
-        System.out.println("Precio total: " + celular.getPrecioTotal() + " - Almacenamiento total: " + celular.getAlmacenamientoTotal());
+        System.out.println("Precio: " + celular.getPrecioTotal() + " Almacenamiento: " + celular.getAlmacenamientoTotal());
 
     }
     

@@ -1,6 +1,7 @@
 package TercerParcialExamen.Visitor;
 
 public class Plugin implements IVisitor {
+
     @Override
     public void save(Notepad notepad) {
             notepad.getDocumento().setFormato("pdf");

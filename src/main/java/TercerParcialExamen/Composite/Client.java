@@ -8,6 +8,7 @@ public class Client {
         folder.add(new Archivo("TExto1 as"));
         folder.add(new Archivo("TExto1 d d d"));
 
+
         Composite folder2 = new Composite();
         folder2.add(new Archivo("TExto1wqeq qwe"));
         folder2.add(new Archivo("TExto1"));

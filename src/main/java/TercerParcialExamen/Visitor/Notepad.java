@@ -3,6 +3,7 @@ package TercerParcialExamen.Visitor;
 
 public class Notepad implements IElemento {
     private Documento doc;
+
     @Override
     public void crear(String text, String name) {
         doc=new Documento(text,name);

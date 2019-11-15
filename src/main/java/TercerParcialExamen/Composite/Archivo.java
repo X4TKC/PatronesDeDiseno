@@ -7,9 +7,7 @@ public class Archivo extends Component {
     }
 
     @Override
-    public void print() {
-        System.out.println("\t Name : "+this.getName()+" Numero de palabras :" + this.getNumWords());
-    }
+    public void print() { System.out.println("\t Name : "+this.getName()+" Text: " +getText()+" Numero de palabras :" + this.getNumWords()); }
 
     @Override
     public void add(Component component) {

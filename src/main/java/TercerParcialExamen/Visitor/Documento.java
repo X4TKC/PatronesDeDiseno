@@ -5,6 +5,10 @@ public class Documento {
     private String name;
     private String formato;
     private int numChar;
+    public Documento (String text, String name){
+        this.text=text;
+        this.name=name;
+    }
 
     public int getNumChar() {
         return numChar;
@@ -37,8 +41,5 @@ public class Documento {
     public void setFormato(String formato) {
         this.formato = formato;
     }
-    public Documento (String text, String name){
-        this.text=text;
-        this.name=name;
-    }
+
 }

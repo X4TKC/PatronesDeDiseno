@@ -1,8 +1,7 @@
 package TercerParcialExamen.Decorator;
 
 public class MemoriaExterna extends Decorator{
-    
-	private String attribute1;
+	private String name;
     private int precio;
     private int precioTotal;
     private int almacenamiento;
@@ -27,8 +26,8 @@ public class MemoriaExterna extends Decorator{
     
     public void operation(){
         super.operation();
-        this.attribute1 = "Memoria externa";
-        System.out.println("Adding " + attribute1 + " al precio de: " + this.getPrecio() + " y cantidad de memoria de: "+ this.getAlmacenamiento());
+        this.name = "Memoria externa";
+        System.out.println("Adding " + name + " Precio: " + this.getPrecio() + " Memoria: "+ this.getAlmacenamiento());
     }
 
 	@Override
