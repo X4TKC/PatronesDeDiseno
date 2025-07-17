@@ -3,9 +3,8 @@ name: CI Pipeline
 on:
   pull_request:
     branches:
-      - devel
-      - stage
-      - prod
+      - develop
+      - master
 
 jobs:
   ci:
