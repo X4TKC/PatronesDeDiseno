@@ -1,2 +1,1 @@
 # PatronesDeDiseno
-Clases/Examenes
